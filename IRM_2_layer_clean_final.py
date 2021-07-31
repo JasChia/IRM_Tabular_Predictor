@@ -21,15 +21,15 @@ from sklearn import preprocessing
 
 
 
-#values used later in the code, max_epoch is the amount of epochs the program runs for
+#values used to enable/disable a hidden layer, IRM penalty, and choose hyperparameters
 parser = argparse.ArgumentParser(description='1_layer IRM')
 parser.add_argument('--lr', type=float, default=0.0001)
 parser.add_argument('--n_restarts', type=int, default=1)
 parser.add_argument('--max_epoch', type=int, default=200)
 parser.add_argument('--erm_weight', type=float, default=1)
 parser.add_argument('--irm_weight', type=float, default=1)
-parser.add_argument('--hidden_layer', type=bool, default=False)
-parser.add_argument('--hidden_dim_size', type =float, default=400)
+parser.add_argument('--hidden_layer', type=bool, default=True)
+parser.add_argument('--hidden_dim_size', type=float, default=400)
 parser.add_argument('--IRM', type=bool, default=True)
 flags = parser.parse_args()
 
@@ -49,8 +49,6 @@ class MLP(nn.Module):
             xavier_uniform_(layer1.weight)
             self.main_ = nn.Sequential(layer1, nn.Sigmoid())
 
-        
-        
     def forward(self, X):
         X = self.main_(X)
         return X
@@ -210,7 +208,7 @@ def complete_table(avg_train_acc, avg_test_acc, avg_in_distribution_test_acc):
         print (line)
 
 #sets the device to gpu if available
-device = torch.device("cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("device:", device)
 #initializing accuracy variables
 total_in_distribution_test_acc = 0
