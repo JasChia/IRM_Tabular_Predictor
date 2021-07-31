@@ -22,7 +22,7 @@ from sklearn import preprocessing
 
 
 #values used to enable/disable a hidden layer, IRM penalty, and choose hyperparameters
-parser = argparse.ArgumentParser(description='1_layer IRM')
+parser = argparse.ArgumentParser(description='IRM Predictor')
 parser.add_argument('--lr', type=float, default=0.0001)
 parser.add_argument('--n_restarts', type=int, default=1)
 parser.add_argument('--max_epoch', type=int, default=200)
