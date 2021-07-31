@@ -222,6 +222,8 @@ file_name = (os.path.basename(__file__))
 print("File name:", file_name, "Restarts:", flags.n_restarts,\
 "Learning rate:", flags.lr, "max_epochs:", flags.max_epoch, \
 "ERM weight:", flags.erm_weight, "IRM weight:", flags.irm_weight)
+#change file directory to data file
+os.chdir('Wirbel_Zeller_2019_Fecal_Data')
 
 if not flags.hidden_layer:
     flags.hidden_dim_size = 'N/A'
@@ -234,7 +236,6 @@ for b in range(0, flags.n_restarts):
     model = MLP(849).to(device)
         
     # data file paths
-    os.chdir('Wirbel_Zeller_2019_Fecal_Data')
     test_files = ["France.csv"]
     training_files = ["Germany.csv", "USA.csv", "Austria.csv", "China.csv"]
         
