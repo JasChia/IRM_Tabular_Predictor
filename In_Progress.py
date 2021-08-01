@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#This is the current progress on enabling cuda/gpu and will be the most recent version that may contain bugs
 # pytorch mlp for binary classification
 import os
 import torch.nn as nn
