@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#Before running, if you have a cuda available machine edit line 209
 # pytorch mlp for binary classification
 import os
 import torch.nn as nn
