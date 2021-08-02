@@ -157,7 +157,6 @@ def train_model(training_env, model):
 
             error += error_e.mean()
             
-        print("penalty:", penalty)
         loss = flags.erm_weight * error + penalty * flags.irm_weight
         # update model weights
         optimizer.zero_grad()
