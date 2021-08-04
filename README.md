@@ -6,8 +6,8 @@ In order to run, this requires python 3, [numpy](https://numpy.org/), [pytorch](
 The data is pulled from the "Data" folder, and comprised of comma delimited spreadsheets. Each row is a new subject's data, and every column is a different input with the last column being the identifier of the subject's state, in the default data provided, having colorrectal cancer or being healthy.
 
 usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
-                            [-erm_weight] [--irm_weight] [-hidden_layer] [-hidden_dim_size]
-                            [--IRM] [--test_files] [training_files]
+                            [--erm_weight] [--irm_weight] [--hidden_layer] [--hidden_dim_size]
+                            [--IRM] [--test_files] [--training_files]
   
   -learning_rate (float), --The learning rate of the optimizer, default value of  0.001.
   
