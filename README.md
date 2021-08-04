@@ -1,9 +1,11 @@
 # IRM_Tabular_Predictor
 This is a deep neural net invariant risk minimization predictor for tabular data based off of [Arjovsky et al.'s IRM algorithm](https://arxiv.org/abs/1907.02893v1).
+### Data
+The data is pulled from the "Data" folder, and comprised of comma delimited spreadsheets. Each row is a new subject's data, and every column is a different input with the last column being the identifier of the subject's state, in the default data provided, having colorrectal cancer or being healthy.
 ## Instruction on Usage
 In order to run, this requires python 3, [numpy](https://numpy.org/), [pytorch](https://pytorch.org/), [sklearn](https://scikit-learn.org/stable/), [pandas](https://pandas.pydata.org/), and [cupy](https://cupy.dev/).
-  ### Data
-The data is pulled from the "Data" folder, and comprised of comma delimited spreadsheets. Each row is a new subject's data, and every column is a different input with the last column being the identifier of the subject's state, in the default data provided, having colorrectal cancer or being healthy.
+
+After navigating to the folder housing the code and data file, run a command in terminal using these arguments. For example, on windows 10, in an environment with all dependencies installed, running python IRM_Tabular_Predictor --n_restarts 10 --max_epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files France.csv --training_files Germany.csv, USA.csv, Austria.csv, China.csv >> test_results.txt will output the results of the program into the text file test_results using default settings.
 
 usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
                             [--erm_weight] [--irm_weight] [--hidden_layer] [--hidden_dim_size]
