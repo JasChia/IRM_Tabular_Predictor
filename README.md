@@ -19,9 +19,9 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
   
   -irm_weight (float), --The weight of the IRM (invariant risk minimization) penalty, default value of 1.
   
-  -hidden_dim_size(float), --The size of the hidden layer, N/A if hidden_layer is false, defautl value of 400.
-  
   -hidden_layer (boolean), --True uses a single hidden layer in addition to the input and output layers, false has no hidden layers, default value of True.
+  
+  -hidden_dim_size(float), --The size of the hidden layer, N/A if hidden_layer is false, defautl value of 400.
   
   -IRM (boolean), --True uses IRM algorithm, while false only uses ERM algorithm, default value of True.
   
