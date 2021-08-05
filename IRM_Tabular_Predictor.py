@@ -27,8 +27,8 @@ parser.add_argument('--irm_weight', type=float, default=1)
 parser.add_argument('--hidden_layer', type=bool, default=True)
 parser.add_argument('--hidden_dim_size', type=int, default=400)
 parser.add_argument('--IRM', type=bool, default=True)
-parser.add_argument('--test_files', type=str, default="Wirbel_Zeller_2019_France.csv")
-parser.add_argument('--training_files', type=str, default="Wirbel_Zeller_2019_Germany.csv,Wirbel_Zeller_2019_USA.csv,Wirbel_Zeller_2019_Austria.csv,Wirbel_Zeller_2019_China.csv")
+parser.add_argument('--test_files', type=str, default="WirbelZeller_2019_CRC_France.csv")
+parser.add_argument('--training_files', type=str, default="WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv")
 flags = parser.parse_args()
 
 #defining the model
