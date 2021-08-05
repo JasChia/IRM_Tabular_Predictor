@@ -15,7 +15,7 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
   
   -n_restarts (integer), --The number of restarts, default value of 10.
   
-  -epoch (integer), --The number of epochs run
+  -epoch (integer), --The number of epochs run.
   
   -erm_weight (float), --The weight of the ERM (empirical risk minimization) penalty (BCELoss), default value of 1.
   
@@ -27,6 +27,6 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
   
   -IRM (boolean), --True uses IRM algorithm, while false only uses ERM algorithm, default value of True.
   
-  -test_files (string), --The files to be used for OOD (out of distribution) testing, default value of "France.csv".
+  -test_files (string), --The files to be used for OOD (out of distribution) testing, default value of "France.csv". Files must be seperated by a single comma and nothing else, for example, if France.csv and Austria.csv are the two inputs files, they must be entered as France.csv,Austria.csv, other ways of entering such as France.csv, Austria.csv, or France.csv , Austria.csv will not be recognized.
   
-  -training_files (string), --The files to be used for both training, and in distribution testing, default value of "Germany.csv, "USA.csv, Austria.csv, China.csv".
+  -training_files (string), --The files to be used for both training, and in distribution testing, default value of "Germany.csv,USA.csv,Austria.csv,China.csv". Files must be seperated by a single comma and nothing else, for example, if France.csv and Austria.csv are the two inputs files, they must be entered as France.csv,Austria.csv, other ways of entering such as France.csv, Austria.csv, or France.csv , Austria.csv will not be recognized
