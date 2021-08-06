@@ -34,7 +34,6 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
 ### An Example
 
 Command run: python IRM_Tabular_Predictor.py --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files WirbelZeller_2019_CRC_France.csv --training_files WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv >> test_results.txt
-![image](https://user-images.githubusercontent.com/88242834/128445919-0e4e39a2-60f4-4dbd-9053-f4550f793422.png)
 ![image](https://user-images.githubusercontent.com/88242834/128446428-7c063477-f748-4c4c-980a-207c5c41eb63.png)
 #### Results:
 ![image](https://user-images.githubusercontent.com/88242834/128446238-be07f867-f737-4a31-842a-238a7bba75d4.png)
