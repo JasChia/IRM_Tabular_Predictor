@@ -20,7 +20,7 @@ from sklearn import preprocessing
 #values used later in the code
 parser = argparse.ArgumentParser(description='IRM Predictor')
 parser.add_argument('--learning_rate', type=float, default=0.001)
-parser.add_argument('--n_restarts', type=int, default=2)
+parser.add_argument('--n_restarts', type=int, default=10)
 parser.add_argument('--epoch', type=int, default=200)
 parser.add_argument('--erm_weight', type=float, default=1)
 parser.add_argument('--irm_weight', type=float, default=1)
