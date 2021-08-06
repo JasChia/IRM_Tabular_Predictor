@@ -219,21 +219,14 @@ def complete_table(avg_train_acc, avg_test_acc, avg_in_distribution_test_acc):
 
 #sets the device to gpu if available
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-#print("device:", device)
+print("file name:", (os.path.basename(__file__)), "device:", device)
 #initializing accuracy variables
 total_in_distribution_test_acc = 0
 avg_in_distribution_test_acc = 0
 total_test_acc = 0
 total_train_acc = 0
-#start time and file name
+#start time and data file directory
 start_time = time.time()
-file_name = (os.path.basename(__file__))
-#hyperparameter printing and file name printing
-#print("File name:", file_name, "Restarts:", flags.n_restarts,\
-#"Learning rate:", flags.lr, "max_epochs:", flags.max_epoch, \
-#"ERM weight:", flags.erm_weight, "IRM weight:", flags.irm_weight)
-#change file directory to data file
-#print(os.path.dirname(os.path.realpath(__file__)))
 os.chdir('Data')
 
 if not flags.hidden_layer:
