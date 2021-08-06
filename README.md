@@ -36,8 +36,4 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
 Command run: python IRM_Tabular_Predictor.py --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files WirbelZeller_2019_CRC_France.csv --training_files WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv >> test_results.txt
 ![image](https://user-images.githubusercontent.com/88242834/128445919-0e4e39a2-60f4-4dbd-9053-f4550f793422.png)
 #### Results:
-file name: C:\Users\Jason\Desktop\Summer_Proj\Final_Copies\File_Directory device: cuda:0
-learning Rate    IRM     Hidden Layer    Hidden layer Size    Epochs    ERM weight    IRM weight    Training acc          IDTA                  OOD test acc                   0.001            True    True            400                  200       1.0           1.0           0.9855227882037532    0.9636363636363636    0.7929824561403509    
-Test Files                          Training Files                                                                                                                       
-WirbelZeller_2019_CRC_France.csv    WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv    
-
+![image](https://user-images.githubusercontent.com/88242834/128446238-be07f867-f737-4a31-842a-238a7bba75d4.png)
