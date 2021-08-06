@@ -5,7 +5,7 @@ The data is pulled from the "Data" folder, and comprised of comma delimited spre
 ## Instruction on Usage
 In order to run, this requires python 3, [numpy](https://numpy.org/), [pytorch](https://pytorch.org/), [sklearn](https://scikit-learn.org/stable/), [pandas](https://pandas.pydata.org/), and [cupy](https://cupy.dev/).
 
-After navigating to the folder housing the code and data file, run a command in terminal using these arguments. For example, on windows 10, in an environment with all dependencies installed, running python IRM_Tabular_Predictor --n_restarts 10 --max_epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files France.csv --training_files Germany.csv, USA.csv, Austria.csv, China.csv >> test_results.txt will output the results of the program into the text file test_results using default settings.
+After navigating to the folder housing the code and data file, run a command in terminal using these arguments. For example, on windows 10, in an environment with all dependencies installed, running: python IRM_Tabular_Predictor --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files France.csv --training_files Germany.csv, USA.csv, Austria.csv, China.csv >> test_results.txt will output the results of the program into the text file test_results using default settings.
 
 usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
                             [--erm_weight] [--irm_weight] [--hidden_layer] [--hidden_dim_size]
