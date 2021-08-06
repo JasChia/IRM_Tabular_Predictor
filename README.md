@@ -5,7 +5,7 @@ The data is pulled from the "Data" folder, and comprised of comma delimited spre
 ## Instruction on Usage
 In order to run, this requires python 3, [numpy](https://numpy.org/), [pytorch](https://pytorch.org/), [sklearn](https://scikit-learn.org/stable/), [pandas](https://pandas.pydata.org/), and [cupy](https://cupy.dev/).
 
-After navigating to the folder housing the code and data file, run a command in terminal using these arguments. For example, on windows 10, in an environment with all dependencies installed, running: python IRM_Tabular_Predictor --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files France.csv --training_files Germany.csv, USA.csv, Austria.csv, China.csv >> test_results.txt will output the results of the program into the text file test_results using default settings.
+After navigating to the folder housing the code and data file, run a command in terminal using these arguments. For example, on windows 10, in an environment with all dependencies installed, running: python IRM_Tabular_Predictor.py --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files WirbelZeller_2019_CRC_France.csv --training_files WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv >> test_results.txt will output the results of the program into the text file test_results using default settings.
 
 usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
                             [--erm_weight] [--irm_weight] [--hidden_layer] [--hidden_dim_size]
@@ -32,3 +32,11 @@ usage: dataset_selection.py [--lr] [--n_restarts] [--epoch]
   -training_files (string), --The files to be used for both training, and in distribution testing, default value of "Germany.csv,USA.csv,Austria.csv,China.csv". Files must be seperated by a single comma and nothing else, for example, if France.csv and Austria.csv are the two inputs files, they must be entered as France.csv,Austria.csv, other ways of entering such as France.csv, Austria.csv, or France.csv , Austria.csv will not be recognized.
 
 ### An Example
+
+![image](https://user-images.githubusercontent.com/88242834/128445769-33fd65d6-45ce-4e4b-a23f-67a4b7ccdaf5.png)
+
+#### Results:
+file name: C:\Users\Jason\Desktop\Summer_Proj\Final_Copies\File_Directory device: cuda:0
+learning Rate    IRM     Hidden Layer    Hidden layer Size    Epochs    ERM weight    IRM weight    Training acc          IDTA                  OOD test acc          Test Files                          Training Files                                                                                                                       
+0.001            True    True            400                  200       1.0           1.0           0.9855227882037532    0.9636363636363636    0.7929824561403509    WirbelZeller_2019_CRC_France.csv    WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv    
+
