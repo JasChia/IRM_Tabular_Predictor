@@ -1,4 +1,4 @@
-# IRM_Tabular_Predictor
+# IRM Tabular Predictor
 This is a deep neural net invariant risk minimization predictor for tabular data based off of [Arjovsky et al.'s IRM algorithm](https://arxiv.org/abs/1907.02893v1).
 ### Data
 The data is pulled from the "Data" folder, and comprised of comma delimited spreadsheets. Each row is a new subject's data, and every column is a different input with the last column being the identifier of the subject's state, in the default data provided, having colorrectal cancer or being healthy.
