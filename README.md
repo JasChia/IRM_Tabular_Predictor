@@ -37,15 +37,27 @@ Command run: python IRM_Tabular_Predictor.py --n_restarts 10 --epoch 200 --erm_w
 ![image](https://user-images.githubusercontent.com/88242834/128446428-7c063477-f748-4c4c-980a-207c5c41eb63.png)
 #### Results:
 ![image](https://user-images.githubusercontent.com/88242834/128446238-be07f867-f737-4a31-842a-238a7bba75d4.png)
+
 Each meaning:
+  
   Learning rate: Learning rate for the optimizer (Adam).
+  
   IRM: Whether the IRM penalty is being used or not.
+  
   Hidden Layer: Whether there is a hidden layer or not.
+  
   Hidden Layer Size: The size of the hidden layer, automatically N/A if Hidden Layer is set to False even if a number is input to this parameter.
+  
   Epochs: The number of epochs the program runs for each restart.
+  
   ERM weight: The multiplier on the ERM penalty (BCELoss).
+  
   IRM weight: The multiplier on the IRM penalty, if IRM is false this is irrelevent because this number will just be multiplied by 0.
+  
   Training acc: The training accuracy on the files the program used to train on.
+  
   IDTA: In distribution test accuracy, the accuracy on the 10% witheld from training, but still from the same training files.
+  
   OOD test acc: Out of distribution test accuracy, the accuracy of the program on the test file completely witheld from training.
+  
   Note: Training acc, IDTA, and OOD all return the average over every run.
