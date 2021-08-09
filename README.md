@@ -33,9 +33,9 @@ usage: dataset_selection.py [--learning_rate] [--n_restarts] [--epoch]
 
 ### An Example
 
-Command run: python IRM_Tabular_Predictor.py --n_restarts 10 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer True --hidden_dim_size 400 --IRM True --test_files WirbelZeller_2019_CRC_France.csv --training_files WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv >> test_results.txt
-![image](https://user-images.githubusercontent.com/88242834/128786810-e0d7eadc-5240-4e9b-87de-d651e411d35d.png)#### Results:
-![image](https://user-images.githubusercontent.com/88242834/128446238-be07f867-f737-4a31-842a-238a7bba75d4.png)
+Command run: python IRM_Tabular_Predictor.py --learning_rate 0.001 --n_restarts 20 --epoch 200 --erm_weight 1 --irm_weight 1 --hidden_layer --hidden_dim_size 400 --IRM --training_files WirbelZeller_2019_CRC_Germany.csv,WirbelZeller_2019_CRC_USA.csv,WirbelZeller_2019_CRC_Austria.csv,WirbelZeller_2019_CRC_China.csv --test_files WirbelZeller_2019_CRC_France.csv >> results.txt
+![image](https://user-images.githubusercontent.com/88242834/128787035-df54c393-a89d-46be-b9b2-565e90c53934.png)
+![image](https://user-images.githubusercontent.com/88242834/128787103-8ce03f6c-f71c-4e73-8249-7b9c635294b7.png)
 
 Each meaning:
   
